@@ -50,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .btn button{
@@ -61,4 +61,66 @@
     outline: none;
     font-weight: bold;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: blue;
+    }
+
+    #gameFrame{
+        height: 350px;
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .enemy{
+        width: 80px;
+        height: 220px;
+        position: absolute;
+        bottom: -400px;
+    }
+
+    #enemy1{left: 5px;}
+    #enemy2{left: 100px;}
+    #enemy3{left: 200px;}
+    #enemy4{left: 300px;}
+    #enemy5{left: 400px;}
+
+    .enemy.dead{
+        background-color: gray;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: red;
+    }
+
+    #gameFrame{
+        height: 300px;
+        width: 500px;
+        margin: auto;
+        position: relative;
+    }
+
+    .enemy{
+        width: 100px;
+        height: 220px;
+        position: absolute;
+        bottom: -400px;
+    }
+
+    #enemy1{left: 5px;}
+    #enemy2{left: 100px;}
+    #enemy3{left: 200px;}
+    #enemy4{left: 300px;}
+    #enemy5{left: 400px;}
+
+    .enemy.dead{
+        background-color: gray;
+        height: 40px;
+    }
 }
