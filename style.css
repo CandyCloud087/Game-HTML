@@ -5,13 +5,14 @@
     margin: auto;
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .enemy{
     width: 150px;
     height: 400px;
     position: absolute;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     bottom: -400px;
     transition: all .5s;
 }
@@ -41,6 +42,23 @@
     left: 0;
     height: 20px;
     width: 100%;
-    background-color: coral;
+    background-color: rgb(255, 57, 57);
     transition: width .5s;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.btn button{
+    padding: 10px;
+    color: white;
+    background-color: rgb(45, 228, 21);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
